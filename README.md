@@ -8,3 +8,8 @@ Using cmd go to the directory with all the files, type 'iverilog -o ./a.out Ler_
 Type 'vvp ./a.out' to see the results.
 
 In fact the only purpose of these testers is to show that the schemes work properly (the are correct results in the output files).
+
+
+About the files:
+~ Qer.v - 4-2-bit s-block Q;
+~ Ler.v - leader constant generator (generates 32 2-bit constants depending on the round).

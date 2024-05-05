@@ -1,4 +1,4 @@
-`include "Ler.v"
+`include "leader_generator.v"
 
 module Ler_tester ();
     reg clk;

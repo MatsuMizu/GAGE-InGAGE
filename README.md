@@ -11,7 +11,7 @@ In fact the only purpose of these testers is to show that the schemes work prope
 
 
 About the files:
-~ Qer.v - 4-2-bit s-block Q;
-~ leader_generator.v - leader constant generator (generates 32 2-bit constants depending on the round);
-~ HDL_flop - direct flipflop implementation;
-~ increment.v - round number counter (the number of tests is defined in header.v).
+Qer.v - 4-2-bit s-block Q;
+leader_generator.v - leader constant generator (generates 32 2-bit constants depending on the round);
+HDL_flop - direct flipflop implementation;
+increment.v - round number counter (the number of tests is defined in header.v).

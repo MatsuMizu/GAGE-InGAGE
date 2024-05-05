@@ -22,7 +22,7 @@ module Ler_tester ();
 
     leader_generator module_call (.t (t), .l (l));
 
-    always @(negedge clk) begin
+    always @(posedge clk) begin
         t[4] = i / 16;
         t[3] = (i - 16 * t[4])/ 8;
         t[2] = (i - 16 * t[4] - 8 * t[3]) / 4;
@@ -31,7 +31,7 @@ module Ler_tester ();
         i = i + 1;
     end
 
-    always @(posedge clk) begin
+    always @(negedge clk) begin
         $display ("i: %b", t);
         $display ("l: %b", l);
         if (l != output_data [i - 1]) begin

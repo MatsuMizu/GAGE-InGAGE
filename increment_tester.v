@@ -1,4 +1,3 @@
-`include "header.v"
 `include "increment.v"
 
 module increment_tester ();
@@ -26,7 +25,7 @@ module increment_tester ();
     always @(negedge clk) begin
         $display ("Moment %d, module output %d", i, t);
         i = i + 1;
-        if (i == `num_test) begin
+        if (i == 40) begin
             $display ("No more tests left");
             $finish;
         end

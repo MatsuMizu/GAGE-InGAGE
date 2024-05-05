@@ -22,7 +22,7 @@ module Qer_tester ();
 
     Q module_call (.x (x), .Qx (Qx));
 
-    always @(negedge clk) begin
+    always @(posedge clk) begin
         x[3] = i / 8;
         x[2] = (i - 8 * x[3]) / 4;
         x[1] = (i - 8 * x[3] - 4 * x[2]) / 2;
@@ -30,7 +30,7 @@ module Qer_tester ();
         i = i + 1;
     end
 
-    always @(posedge clk) begin
+    always @(negedge clk) begin
         $display ("x: %b", x);
         $display ("Qx: %b", Qx);
         if (Qx != output_data [i - 1]) begin

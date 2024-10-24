@@ -19,3 +19,5 @@ leader_generator.v - leader constant generator (generates 32 2-bit constants dep
 HDL_flop - direct flipflop implementation;
 
 increment.v - round number counter (the number of tests is defined in header.v).
+
+Курсовая_3 - the text of my coursework (in Russian)
